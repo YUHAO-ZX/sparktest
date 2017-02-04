@@ -10,7 +10,7 @@ import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.mllib.util.MLUtils
 import org.apache.spark.{SparkContext, SparkConf}
 
-object GastriCcancer {
+object GastriCcancer1 {
   def main(args: Array[String]) {
     val conf = new SparkConf()                                     //创建环境变量
       .setMaster("local")                                             //设置本地化处理

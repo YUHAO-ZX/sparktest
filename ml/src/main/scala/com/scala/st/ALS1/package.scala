@@ -5,7 +5,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 /**
  * Created by xinz on 2017/1/19.
  */
-package object ALS1 {
+object ALS1 {
   def main(args: Array[String]) {
     val conf = new SparkConf().setMaster("local").setAppName("CollaborativeFilter ")	//设置环境变量
     val sc = new SparkContext(conf)                                 //实例化环境

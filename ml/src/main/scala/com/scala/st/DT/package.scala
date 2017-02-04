@@ -6,7 +6,7 @@ package com.scala.st
 import org.apache.spark.mllib.tree.DecisionTree
 import org.apache.spark.mllib.util.MLUtils
 import org.apache.spark.{SparkConf, SparkContext}
-package object DT {
+object DT {
   def main(args: Array[String]) {
     val conf = new SparkConf()                                     //创建环境变量
       .setMaster("local")                                             //设置本地化处理

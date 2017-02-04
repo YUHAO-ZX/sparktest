@@ -5,7 +5,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 /**
  * Created by xinz on 2017/1/20.
  */
-package object Linaer {
+object Linaer {
   val conf = new SparkConf()                                     //创建环境变量
     .setMaster("local")                                              //设置本地化处理
     .setAppName("LinearRegression ")                               //设定名称

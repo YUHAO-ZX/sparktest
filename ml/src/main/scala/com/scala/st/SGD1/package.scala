@@ -5,7 +5,7 @@ import scala.collection.mutable.HashMap
 /**
  * Created by xinz on 2017/1/20.
  */
-package object SGD1 {
+object SGD1 {
   val data = HashMap[Int,Int]()									//创建数据集
   def getData():HashMap[Int,Int] = {								//生成数据集内容
     for(i <- 1 to 50){											//创建50个数据

@@ -7,7 +7,7 @@ import org.apache.spark.SparkContext._
  * Created by xinz on 2017/1/20.
  */
 //线性回归+验证准确率
-package object Linaer2 {
+object Linaer2 {
   val conf = new SparkConf()                                     //创建环境变量
     .setMaster("local")                                              //设置本地化处理
     .setAppName("LinearRegression3 ")                               //设定名称
