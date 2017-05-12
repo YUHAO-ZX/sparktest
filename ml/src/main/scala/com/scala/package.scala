@@ -1,4 +1,5 @@
 package com
+import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.mllib.linalg.{Matrices, Vectors}
 import org.apache.spark.mllib.stat.Statistics
 /**
@@ -220,10 +221,10 @@ package object scala {
 //    print(result)
 //
     //todo test 2
-//    var conf = new SparkConf().setMaster("local").setAppName("testRDDMethod")
-//    var sc = new SparkContext(conf)
-//    var arr = sc.parallelize(Array(1,2,3,4,5,5),3)//将array均分为两个数组，
-//    var result = arr.aggregate(0)(math.max(_,_),_+_)//将两个数组中最大值进行相加
+    var conf = new SparkConf().setMaster("local").setAppName("testRDDMethod")
+    var sc = new SparkContext(conf)
+    var arr = sc.parallelize(Array(1,2,3,4,5,5),3)//将array均分为两个数组，
+    var result = arr.aggregate(0)(math.max(_,_),_+_)//将两个数组中最大值进行相加
 //    println(result)
 
     //todo test 1
